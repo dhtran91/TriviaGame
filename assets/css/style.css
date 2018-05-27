@@ -1,0 +1,9 @@
+body {
+    background: url("http://fulldesktopbackgrounds.com/wp-content/uploads/2017/09/Medical-Background-2.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
