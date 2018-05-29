@@ -136,8 +136,9 @@
                     TriviaGame.showContent();
                 },
                 countdownTimer: function () {
-                    
-                    if (TriviaGame.time === 1) {
+                    TriviaGame.time--;
+                    $('#timer').text('Time Left: ' + TriviaGame.time);
+                    if (TriviaGame.time === 0) {
                         
                         clearInterval(intervalId);
                         let response = document.querySelector('input[name="choice"]:checked');
@@ -160,9 +161,6 @@
                             TriviaGame.showContent();
                         }
                    
-                    } else {
-                    TriviaGame.time--;
-                    $('#timer').text('Time Left: ' + TriviaGame.time);
                     }
                 }
             }
